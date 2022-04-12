@@ -1,6 +1,6 @@
 # Browser NFC Reader - LNURLW
 
-Javascript for listening for incoming NFC NDEF data in the browser utilising 'Web NFC' (https://w3c.github.io/web-nfc/) for accepting NFC Bitcoin lightning payments via LNURLW (https://github.com/fiatjaf/lnurl-rfc/blob/luds/03.md). 
+Javascript for listening to incoming NFC NDEF data in the browser utilising 'Web NFC' (https://w3c.github.io/web-nfc/) for accepting NFC Bitcoin lightning payments via LNURLW (https://github.com/fiatjaf/lnurl-rfc/blob/luds/03.md). 
 
 ## Compatibility
 Browser compatibility will depend on implementation of Web NFC, currently only Chrome for Android is compatible (https://caniuse.com/webnfc).
