@@ -17,7 +17,7 @@ Browser compatibility will depend on implementation of Web NFC, currently only C
 5. Handle lnurlw on backend server to request a payment to the required lightning invoice.
 
 ## LNURLW
-The backend server should follow the standard lnurlw flow (https://github.com/fiatjaf/lnurl-rfc/blob/luds/03.md) using the lightning invoice for the order as the payment request (pr) in the second GET request. This will instruct the user's wallet to pay the required invoice. Ideally, the server should handle both bech32 encoded lnurlw and non bech32 encoded lnurlw (https://github.com/fiatjaf/lnurl-rfc/blob/luds/17.md)
+The backend server should follow the standard lnurlw flow (https://github.com/fiatjaf/lnurl-rfc/blob/luds/03.md) using the lightning invoice for the order as the payment request (pr) in the second GET request. This will instruct the user's wallet to pay the required invoice. The server should handle both bech32 encoded lnurlw and non bech32 encoded lnurlw (https://github.com/fiatjaf/lnurl-rfc/blob/luds/17.md)
 
 ## Security
 Even though the lightning invoice should be available on the client side, it is recommended to re request this on the server side before attempting the lnurlw flow to avoid any malicious attempts to change the invoice client side. This can be done by passing additional parameters across in the POST request to identify the order and retrieve the invoice server side (such as an orderid).
